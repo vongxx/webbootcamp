@@ -1,0 +1,79 @@
+/*Tag Selectors*/
+body{
+    /* #364F6B #3FC1C9 #F5F5F5 #FC5185*/
+    background-color: #F5F5F5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Can embed fonts : fonts.google.com */
+    /* font-size: 100% (dynamic) = 1em (dynamic) = 16px (static) */
+    /* font-size: for dynamic sizes, it'll inherit from parent. Eg. if body has 2em, and h1 has 4em, the h1 = 8em*/
+    /* font-size: (Preferred)   if you don't want to inherit from parent. Use rem(root em). eg. 5.625rem */
+}
+
+h1{
+    color: #364F6B;
+}
+
+h3{
+    color: #364F6B;
+}
+
+hr{
+    border-color: grey;
+    border-width: 6px;
+    border-style: dotted none none none;
+    width: 8%;
+}
+
+/*Class Selectors - a html element can have multiple classes*/
+/*Class Selectors - Recommended instead of Id selectors*/
+/*Class Selectors - also accept pseudo class eg. img:hover */
+
+
+.container-header{
+    background-color: #3FC1C9;
+    margin: 0px auto;
+}
+
+.container-main{
+    width:80%;
+    margin: auto;
+}
+
+.container-footer{
+    height: 100px;
+    background-color: #FC5185;
+}
+
+.h1_name{
+    width: 50%;
+    margin: auto;
+}
+
+.h3_description{
+    width: 50%;
+    margin: auto;
+}
+
+.span_fullstack{
+    text-decoration: underline;
+}
+
+.classTable{
+    border-style: dotted;
+}
+
+.classTable:hover{
+    border-style: solid;
+}
+
+.imgfarm{
+    width: 10px; 
+    height: 10px; 
+    object-fit: contain;
+}
+
+/*Id Selectors  - must be unique in entire page - more precedence than class tag*/
+
+#myBiglink{
+    font-size: larger;
+}
