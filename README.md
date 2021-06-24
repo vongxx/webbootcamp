@@ -14,4 +14,18 @@ CSS:
 5. Font family -> a fallback model
 6. Font embedding
 
+Hosting webpage
+================
+1. Host using Github (free)
+   
+2. Buy a domain name (eg. myfarm.com)
+    - https://namecheap.com (different pricing : $8-10/year)
+    - https://domains.google/intl/en_sg ($12/year)
+
+3. Change the domain name of your github pages!
+    https://www.youtube.com/watch?v=TwOV_UaIXcU
+
+Old webpage url = https://vongxx.github.io/webbootcamp/HTML_PersonalSite/
+New webpage url = https://myfarm.com/HTML_PersonalSite/
+
 
