@@ -1,14 +1,14 @@
 # Key Concepts
 
-## How to start
+### How to start
 1. Use a good IDE (eg. VSCODE / ATOM)
 2. Download useful extensions
 3. Start coding away~
 
-## HTML
+### HTML
 1. HTML tags
 
-## CSS
+### CSS
 1. Where to define styles? 
     - External CSS file + reference it in html
     - "style" element in html head
@@ -20,20 +20,20 @@
 6. Font family -> a fallback model
 7. Font embedding
 
-## Bootstrap 
+### Bootstrap 
 1. Frontend Display library (with CSS and Javascript)
 2. Good integration with Mobile/Web display
 
-## Javascript
+### Javascript
 1. To have interactivity
 
-## Node
+### Node
 1. Javascript Library
 
-## REACT
+### REACT
 1. Javascript Library
 
-## MongoDB
+### MongoDB
 1. Good backend db to use
 
 # Hosting webpage
@@ -66,6 +66,27 @@
     - 1 GB storage
 
 
+# Resources
+
+1. Documention
+    - Intellisense in VSCode 
+        - [Emmet ](https://docs.emmet.io)
+    - HTML/CSS Documentation 
+        - [MDN](https://developer.mozilla.org/en-US/)
+        - [Devdocs](https://devdocs.io/)
+        - [MDN Valid Colors](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+
+2. Content Resources
+    - Unicode
+        - [UnicodeTable](https://unicode-table.com/)
+    - Color Templates
+        - [Colorhunt](http://colorhunt.co)
+    - Icons
+        - [Flaticon](www.flaticon.com)
+    - GIFs
+        - [Giphy](www.giphy.com)
+    - Create Custom Buttons
+        - [CSSButton](https://cssbuttoncreator.com/)
 
 
 
