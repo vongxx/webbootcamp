@@ -28,4 +28,21 @@ Hosting webpage
 Old webpage url = https://vongxx.github.io/webbootcamp/HTML_PersonalSite/
 New webpage url = https://myfarm.com/HTML_PersonalSite/
 
+*Note*  GitHub has a soft 100GB/mth bandwidth limit! 
+Github only can host Static page (Html/CSS/Javascript) 
+If need dynamic feature (eg. show different things to diff people), Can use Firebase -> Google Cloud BackendAsAService (Got free version)
+Firebase (Free) limitations: 
+100 max concurrent connections
+10GB transfer
+1 GB storage
+
+
+If using Github to host pages, recommended to use Cloudflare as an intermediary (CDN, DNS, DDoS protection) + give a free SSL Cert 
+4. https://www.toptal.com/github/unlimited-scale-web-hosting-github-pages-cloudflare
+Got free version! - But 3 page rule
+
+
+
+
+
 
