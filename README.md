@@ -20,14 +20,21 @@
 6. Font family -> a fallback model
 7. Font embedding
 
-## Bootstrap (Frontend Display library withh CSS and Javascript)
-1. 
+## Bootstrap 
+1. Frontend Display library (with CSS and Javascript)
+2. Good integration with Mobile/Web display
+
 ## Javascript
-1. 
+1. To have interactivity
+
 ## Node
-1. 
+1. Javascript Library
+
+## REACT
+1. Javascript Library
+
 ## MongoDB
-1.
+1. Good backend db to use
 
 # Hosting webpage
 1. If static, host using Github (free)
