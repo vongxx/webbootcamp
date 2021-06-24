@@ -1,45 +1,63 @@
-Key Concepts:
-HTML:
+# Key Concepts
 
+## How to start
+1. Use a good IDE (eg. VSCODE / ATOM)
+2. Download useful extensions
+3. Start coding away~
 
-CSS:
-0. Where to define styles? 
+## HTML
+1. HTML tags
+
+## CSS
+1. Where to define styles? 
     - External CSS file + reference it in html
     - "style" element in html head
     - "style" property in individual element
-1. Block Model -> every html element is actually a box
-2. Block properties -> Margin, Border, Padding
-3. display -> block, inline, inline-block
-4. Parent-Child -> z dimension stacking
-5. Font family -> a fallback model
-6. Font embedding
+2. Block Model -> every html element is actually a box
+3. Block properties -> Margin, Border, Padding
+4. display -> block, inline, inline-block
+5. Parent-Child -> z dimension stacking
+6. Font family -> a fallback model
+7. Font embedding
 
-Hosting webpage
-================
-1. Host using Github (free)
+## Bootstrap (Frontend Display library withh CSS and Javascript)
+1. 
+## Javascript
+1. 
+## Node
+1. 
+## MongoDB
+1.
+
+# Hosting webpage
+1. If static, host using Github (free)
    
 2. Buy a domain name (eg. myfarm.com)
-    - https://namecheap.com (different pricing : $8-10/year)
-    - https://domains.google/intl/en_sg ($12/year)
+    - [Namecheap](https://namecheap.com) (different pricing : $8-10/year)
+    - [GoogleDomain](https://domains.google/intl/en_sg) ($12/year)
 
 3. Change the domain name of your github pages!
-    https://www.youtube.com/watch?v=TwOV_UaIXcU
+    - https://www.youtube.com/watch?v=TwOV_UaIXcU
+    - Old webpage url = https://vongxx.github.io/webbootcamp/HTML_PersonalSite/
+    - New webpage url = https://myfarm.com/HTML_PersonalSite/
 
-Old webpage url = https://vongxx.github.io/webbootcamp/HTML_PersonalSite/
-New webpage url = https://myfarm.com/HTML_PersonalSite/
+4. GitHub limitations
+    - Soft 100GB/mth bandwidth limit! 
+    - Only can host Static page (Html/CSS/Javascript) 
+    - Recommended to use a CDN (eg. **Cloudflare**) as an intermediary to serve the content
 
-*Note*  GitHub has a soft 100GB/mth bandwidth limit! 
-Github only can host Static page (Html/CSS/Javascript) 
-If need dynamic feature (eg. show different things to diff people), Can use Firebase -> Google Cloud BackendAsAService (Got free version)
-Firebase (Free) limitations: 
-100 max concurrent connections
-10GB transfer
-1 GB storage
+5. Cloudflare as an intermediary (CDN, DNS, DDoS protection) + give a free SSL Cert 
+    - https://www.toptal.com/github/unlimited-scale-web-hosting-github-pages-cloudflare
+    - Got free version! - But 3 page rule
 
+6. If hosting a dynamic website (eg. show different content to diff people), use **Firebase**!
+    - Google's webhosting with Frontend and Backend (Got free version)
 
-If using Github to host pages, recommended to use Cloudflare as an intermediary (CDN, DNS, DDoS protection) + give a free SSL Cert 
-4. https://www.toptal.com/github/unlimited-scale-web-hosting-github-pages-cloudflare
-Got free version! - But 3 page rule
+7. Firebase (Free) limitations 
+    - 100 max concurrent connections
+    - 10GB transfer
+    - 1 GB storage
+
 
 
 
