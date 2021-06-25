@@ -1,6 +1,6 @@
 # Sitemap
-    - [Personal Website with only HTML](https://vongxx.github.io/webbootcamp/HTML_PersonalSite/)
-    - [Personal Website with HTML + CSS](https://vongxx.github.io/webbootcamp/HTML_CSS_PersonalSite/)
+- [Personal Website with only HTML](https://vongxx.github.io/webbootcamp/HTML_PersonalSite/)
+- [Personal Website with HTML + CSS](https://vongxx.github.io/webbootcamp/HTML_CSS_PersonalSite/)
 
 # Key Concepts
 
@@ -74,7 +74,7 @@
 
 1. Documention
     - Intellisense in VSCode 
-        - [Emmet ](https://docs.emmet.io)
+        - [Emmet](https://docs.emmet.io)
     - HTML/CSS Documentation 
         - [MDN](https://developer.mozilla.org/en-US/)
         - [Devdocs](https://devdocs.io/)
