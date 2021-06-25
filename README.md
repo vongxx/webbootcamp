@@ -6,7 +6,7 @@
 
 ### How to start
 1. Use a good IDE (eg. VSCODE / ATOM)
-2. Download useful extensions
+2. Download useful [extensions](https://docs.google.com/document/d/e/2PACX-1vQDcdmrkjNPlOSeqS-v99P-57h5f7Yo3pszkko1sN6OtIVlNBFgTyeTX3A1mDSOdw1Ugb1l5o0NVy-a/pub)
 3. Start coding away~
 
 ### HTML
@@ -19,10 +19,14 @@
     - "style" property in individual element
 2. Block Model -> every html element is actually a box
 3. Block properties -> Margin, Border, Padding
-4. display -> block, inline, inline-block
+4. display property -> block, inline, inline-block, none
 5. Parent-Child -> z dimension stacking
+6. position property -> static, absolute, relative (will leave a empty space)
 6. Font family -> a fallback model
 7. Font embedding
+8. Favicon 
+9. Default stylesheet implemented by browser
+    - Chrome => inspect => Body element -> margin: 8px
 
 ### Bootstrap 
 1. Frontend Display library (with CSS and Javascript)
@@ -77,20 +81,22 @@
         - [Emmet](https://docs.emmet.io)
     - HTML/CSS Documentation 
         - [MDN](https://developer.mozilla.org/en-US/)
-        - [Devdocs](https://devdocs.io/)
+        - [Devdocs](https://devdocs.io/) (Alternative to MDN)
         - [MDN Valid Colors](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 
 2. Content Resources
     - Unicode
         - [UnicodeTable](https://unicode-table.com/)
     - Color Templates
-        - [Colorhunt](http://colorhunt.co)
+        - [Colorhunt](https://colorhunt.co)
     - Icons
-        - [Flaticon](www.flaticon.com)
+        - [Flaticon](https://flaticon.com)
     - GIFs
         - [Giphy](www.giphy.com)
     - Create Custom Buttons
         - [CSSButton](https://cssbuttoncreator.com/)
+    - Fonts
+        - [Google Fonts](https://fonts.google.com)
 
 
 

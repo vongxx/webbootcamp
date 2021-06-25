@@ -1,7 +1,8 @@
 /*Tag Selectors*/
 body{
     /* #364F6B #3FC1C9 #F5F5F5 #FC5185*/
-    background-color: #F5F5F5;
+    margin: 0px;
+    /* background-color: #F5F5F5; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* Can embed fonts : fonts.google.com */
     /* font-size: 100% (dynamic) = 1em (dynamic) = 16px (static) */
@@ -30,13 +31,47 @@ hr{
 
 
 .container-header{
-    background-color: #3FC1C9;
-    margin: 0px auto;
+     background-color: white;
+     padding-bottom: 50px;
+}
+
+.container-header-img{
+    height: 250px;
+    width: 100%;
+    object-fit: scale-down;
+
+}
+
+.container-header-centeredtext{
+    margin-top: 0px;
+    text-align: center;
+    /* width: 80%; */
+    /* margin: 0px; */
+    /* position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 .container-main{
-    width:80%;
-    margin: auto;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-main-profilephoto{
+    /* height: 150px; */
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-main-personalquote{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-footer{
@@ -45,12 +80,15 @@ hr{
 }
 
 .h1_name{
-    width: 50%;
+    font-size: 4rem;
+    width: 100%;
     margin: auto;
+    font-family: 'Sacramento', cursive;
 }
 
 .h3_description{
-    width: 50%;
+    font-size: 1.25rem;
+    width: 90%;
     margin: auto;
 }
 
@@ -60,6 +98,9 @@ hr{
 
 .classTable{
     border-style: dotted;
+    display: block;
+    margin: auto;
+    width : 50%;
 }
 
 .classTable:hover{
