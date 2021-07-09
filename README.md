@@ -32,13 +32,13 @@
 
 ### Bootstrap 
 1. Frontend Display library (with CSS and Javascript)
-2. Good integration with Mobile/Web display (Reponsve design)
+2. Designed for multiple displays (Reponsive design)
 3. 12 column per row concept
 4. Responsive by using the keyword (lg , md,, sm) 
 ```html
 <div class="col-lg-3 col-md-4 col-sm-6"> </div>
 ```
-5. Default : column size is 12 (max)
+5. If not explicitly defined, bootstrap will imply that column size is set to max available space
 ```html
 <div class="col-lg-6"> Means that if large screen, this div will take up 0.5 of the screen, if smaller screen, will take up entire row </div>
 ```
@@ -47,7 +47,7 @@
 | Bootstrap class | HTML element to apply on | Description |
 | ------ | ------ | ------ | 
 | nav, navbar | div | to display a navigation bar |
-| container | div | auto responsive div |
+| container-fluid | div | auto responsive div |
 
 ### Javascript
 1. To have interactivity
@@ -108,6 +108,8 @@
         - [Colorhunt](https://colorhunt.co)
     - Icons
         - [Flaticon](https://flaticon.com)
+        - [FontAwesome](https://fontawesome.com)
+            - Need to add fontawesome's javascript into html
     - GIFs
         - [Giphy](www.giphy.com)
     - Create Custom Buttons
