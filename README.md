@@ -1,6 +1,7 @@
 # Sitemap
 - [Personal Website with only HTML](https://vongxx.github.io/webbootcamp/HTML_PersonalSite/)
 - [Personal Website with HTML + CSS](https://vongxx.github.io/webbootcamp/HTML_CSS_PersonalSite/)
+- [Personal Website with HTML + CSS + Bootstrap5](https://vongxx.github.io/webbootcamp/HTML_CSS_Bootstrap_PersonalSite/)
 
 # Key Concepts
 
@@ -11,6 +12,7 @@
 
 ### HTML
 1. HTML tags
+2. Executed from top to bottom (Put the Bootstrap stylesheet first then followed by your custom stylesheet)
 
 ### CSS
 1. Where to define styles? 
@@ -30,7 +32,22 @@
 
 ### Bootstrap 
 1. Frontend Display library (with CSS and Javascript)
-2. Good integration with Mobile/Web display
+2. Designed for multiple displays (Reponsive design)
+3. 12 column per row concept
+4. Responsive by using the keyword (lg , md,, sm) 
+```html
+<div class="col-lg-3 col-md-4 col-sm-6"> </div>
+```
+5. If not explicitly defined, bootstrap will imply that column size is set to max available space
+```html
+<div class="col-lg-6"> Means that if large screen, this div will take up 0.5 of the screen, if smaller screen, will take up entire row </div>
+```
+6. Useful Bootstrap classes
+
+| Bootstrap class | HTML element to apply on | Description |
+| ------ | ------ | ------ | 
+| nav, navbar | div | to display a navigation bar |
+| container-fluid | div | auto responsive div |
 
 ### Javascript
 1. To have interactivity
@@ -94,12 +111,15 @@
         - [Colorhunt](https://colorhunt.co)
     - Icons
         - [Flaticon](https://flaticon.com)
+        - [FontAwesome](https://fontawesome.com)
+            - Need to add fontawesome's javascript into html
     - GIFs
         - [Giphy](www.giphy.com)
     - Create Custom Buttons
         - [CSSButton](https://cssbuttoncreator.com/)
     - Fonts
         - [Google Fonts](https://fonts.google.com)
+            - can embed these fonts into your page (google even provide you with an embed link)
 
 
 
