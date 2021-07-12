@@ -73,6 +73,9 @@
     - 10GB transfer
     - 1 GB storage
 
+8. Hosting on other platforms
+    - [Google Cloud](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gcs#0)
+    -  
 
 # Resources
 
