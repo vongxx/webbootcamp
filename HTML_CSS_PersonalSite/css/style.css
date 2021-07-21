@@ -26,6 +26,7 @@ hr{
     border-width: 6px;
     border-style: dotted none none none;
     width: 8%;
+    margin: 50px auto;
 }
 
 /*Class Selectors - a html element can have multiple classes*/
@@ -33,19 +34,19 @@ hr{
 /*Class Selectors - also accept pseudo class eg. img:hover */
 
 
-.container-header{
+.divHeader{
      background-color: white;
      padding-bottom: 50px;
 }
 
-.container-header-img{
+.divHeader-img{
     height: 250px;
     width: 100%;
     object-fit: scale-down;
 
 }
 
-.container-header-centeredtext{
+.divHeader-centeredtext{
     margin-top: 0px;
     text-align: center;
     /* width: 80%; */
@@ -56,33 +57,49 @@ hr{
     transform: translate(-50%, -50%); */
 }
 
-.container-main{
+.divMain{
     width:60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
 }
 
-.container-main-profilephoto{
+.imgMotherTeresaQuote{
+    width: 30%;
+    float: left;
+}
+
+.spanMotherTeresaQuote{
+    display: inline-block;
+    width:70%;
+    font-family: 'Amita', cursive;
+    font-weight: bold;
+    margin-top: 5vw;
+    font-size: 2vw;
+}
+
+.divMain-profilephoto{
     /* height: 150px; */
     display: block;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25%; 
+    margin: 0 auto;
 }
 
-.container-main-personalquote{
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.divMain-personalquote{
+    clear: left;
+    text-align: center;
 }
 
-.container-main-orderedlist{
+.pPersonalquote{
+    display: inline-block;
+    width: 50%;
+}
+
+
+.divMain-orderedlist{
     width: fit-content;
     margin: auto;
 }
 
-.container-main-unorderedlist{
+.divMain-unorderedlist{
     width: fit-content;
     margin: auto;
 }
