@@ -1,3 +1,9 @@
+h2  {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
 .divDefault {
     display: block; /* actually no need to define this bcos div is default block */
     text-align: center; /* text align only works for block! */
@@ -21,4 +27,8 @@
     display: block; 
     margin: 0 auto;
     /* Note that it cannot be centered if the width is set to 100% (full-width). */
+}
+
+.divBlackBar{
+    background-color: black;
 }
