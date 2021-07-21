@@ -17,11 +17,18 @@
 ### CSS
 1. Where to define styles? 
     - External CSS file + reference it in html
-    - "style" element in html head
+    - "style" section in html's head
     - "style" property in individual element
 2. Block Model -> every html element is actually a box
 3. Block properties -> Margin, Border, Padding
 4. display property -> block, inline, inline-block, none
+| Display Type | Description | Html element |
+| ------ | ------ |  ------ |
+| block | a rect that start on a new line and occupy the full width available. And you can set width and height values. | h1, h2, p, div, ol, ul  | 
+| inline | a rect that doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height.   | img, a, br, span, button, strong, i |
+| inline block | It’s formatted just like the inline element, where it doesn’t start on a new line. BUT, you can set width and height values. |  |
+| none | to remove a block completely from view, the css parser will treat it as it don't exist | N.A. |
+
 5. Parent-Child -> z dimension stacking
 6. position property -> static, absolute, relative (will leave a empty space)
 6. Font family -> a fallback model

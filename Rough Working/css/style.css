@@ -1,0 +1,24 @@
+.divDefault {
+    display: block; /* actually no need to define this bcos div is default block */
+    text-align: center; /* text align only works for block! */
+    /* Result: div's width is still 100%, the image is simply centrally align within it */
+}
+
+.divDefaultUsingMargin {
+    display: block; /* actually no need to define this bcos div is default block */
+    margin: 0 auto; /* Just by using margin alone will not work bcos div's width = 100% by default, cannot centre if width=100% */
+    width: fit-content; /* Absolutely necessary for centre to work */
+    /* Result: div's width has changed! the entire div is centrally align to the window */
+}
+
+.divInlineBlock{
+    display: inline-block; /* forces it to become an inline element*/
+    width: fit-content; /* Does not work, instead create a parent div and set parent div to text-align=centre!*/
+    margin: 0 auto; /* Does not work, instead create a parent div and set parent div to text-align=centre!*/
+}
+
+.imgDefault{
+    display: block; 
+    margin: 0 auto;
+    /* Note that it cannot be centered if the width is set to 100% (full-width). */
+}
