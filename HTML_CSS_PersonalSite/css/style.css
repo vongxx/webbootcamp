@@ -65,15 +65,27 @@ hr{
 .imgMotherTeresaQuote{
     width: 30%;
     float: left;
+    margin: 30px;
 }
 
-.spanMotherTeresaQuote{
+.pMotherTeresaQuote{
     display: inline-block;
-    width:70%;
+    width: 50%; 
     font-family: 'Amita', cursive;
     font-weight: bold;
-    margin-top: 5vw;
+    /* margin-top: 8vw; */
+    margin: 8vw auto 0;
     font-size: 2vw;
+}
+
+.pMotherTeresaName{
+    display: inline-block;
+    font-family: 'Amita', cursive;
+    font-weight: bold;
+    font-size: 0.5em;
+    width: 50%;
+    text-align: right;
+    /* width: 50%; */
 }
 
 .divMain-profilephoto{
@@ -90,7 +102,8 @@ hr{
 
 .pPersonalquote{
     display: inline-block;
-    width: 50%;
+    width: 70%;
+    text-align: left;
 }
 
 
