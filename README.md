@@ -2,6 +2,7 @@
 - [Personal Website with only HTML](https://vongxx.github.io/webbootcamp/HTML_PersonalSite/)
 - [Personal Website with HTML + CSS](https://vongxx.github.io/webbootcamp/HTML_CSS_PersonalSite/)
 - [Personal Website with HTML + CSS + Bootstrap5](https://vongxx.github.io/webbootcamp/HTML_CSS_Bootstrap_PersonalSite/)
+- [All Workings, Test of Concepts](https://vongxx.github.io/webbootcamp/TestConcepts/)
 
 # Key Concepts
 
@@ -22,6 +23,7 @@
 2. Block Model -> every html element is actually a box
 3. Block properties -> Margin, Border, Padding
 4. display property -> block, inline, inline-block, none
+
 | Display Type | Description | Html element |
 | ------ | ------ |  ------ |
 | block | a rect that start on a new line and occupy the full width available. And you can set width and height values. | h1, h2, p, div, ol, ul  | 
