@@ -33,6 +33,8 @@
 
 5. Parent-Child -> z dimension stacking
 6. position property -> static, absolute, relative (will leave a empty space)
+7. float and clear (float may extends outside parent!)
+   - [Understanding float](https://css-tricks.com/almanac/properties/f/float/)
 6. Font family -> a fallback model
 7. Font embedding
 8. Favicon 
@@ -130,6 +132,9 @@
         - [Google Fonts](https://fonts.google.com)
             - can embed these fonts into your page (google even provide you with an embed link)
 
+
+3. Is self built website still relevant with 41.4% of the top 10 million websites (as of May 2021) using Wordpress.org?
+    - [Good intro article](https://kinsta.com/knowledgebase/what-is-wordpress/)
 
 
 
