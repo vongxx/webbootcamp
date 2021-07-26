@@ -6,7 +6,36 @@
 </head>
 <body>
     <h1>Sizing</h1>
-    <h2>Width, Height</h2>
+    <ol>
+        <li>Content affect size(width of inline elements, height of all elements)</li>
+        <li>Layout order is dependent on the html code sequence</li>
+        <li>Child elements lies on top of parent (z-axis)</li>
+    </ol>
+    <h2>Position property</h2>
+    <ol>
+        <li>Static (default)</li>
+            <ul>
+                <li>Keep everything as default. According to HTML rules</li>
+            </ul>
+        <li>Relative</li>
+            <ul>
+                <li>Relative to <strong>where it should have been in Static</strong></li>
+                <li>To use with property top/left/right/bottom = ?px (adding a margin)</li>
+                <li>Will leave an empty space. no other element can take the empty space.</li>
+            </ul>
+        <li>Absolute</li>
+            <ul>
+                <li>Relative to its <strong>parent</strong></li>
+                <li>To use with property top/left/right/bottom = ?px (adding a margin)</li>
+                <li>Will not leave an empty space. Other html element will take its place.</li>
+            </ul>
+        <li>Fixed</li>
+            <ul>
+                <li>Relative to viewport</li>
+                <li>Will be fixed to that position even if you scroll</li>
+                <li>Can implement a fixed nav bar</li>
+            </ul>
+    </ol>
     <p>Pixels, Percentages, vw, em, rem</p>
     <p>Resources:</p>
     <a href="https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984">Comparing em vs rem</a></p>
