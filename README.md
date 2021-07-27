@@ -33,7 +33,7 @@
 
 5. Parent-Child -> z dimension stacking
 6. position property -> static, absolute, relative (will leave a empty space)
-7. float and clear (float may extends outside parent!)
+7. float and clear (float may extends outside parent! -> set overflow property of parent div to be auto)
    - [Understanding float](https://css-tricks.com/almanac/properties/f/float/)
 8. CSS units to use (em,rem,%,vw,px)
    - [CSS which unit to use](https://gist.github.com/basham/2175a16ab7c60ce8e001)
