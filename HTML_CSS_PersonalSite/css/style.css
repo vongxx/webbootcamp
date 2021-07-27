@@ -2,6 +2,7 @@
 body{
     /* #364F6B #3FC1C9 #F5F5F5 #FC5185*/
     margin: 0px;
+    text-align: center;
     /* background-color: #F5F5F5; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* Can embed fonts : fonts.google.com */
@@ -44,18 +45,24 @@ hr{
     height: 250px;
     width: 100%;
     object-fit: scale-down;
-
 }
 
 .divHeader-centeredtext{
     margin-top: 0px;
     text-align: center;
-    /* width: 80%; */
-    /* margin: 0px; */
-    /* position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+}
+
+.h1_name{
+    font-size: 4rem;
+    width: 100%;
+    margin: auto;
+    font-family: 'Sacramento', cursive;
+}
+
+.h3_description{
+    font-size: 1.25rem;
+    width: 90%;
+    margin: auto;
 }
 
 .divMain{
@@ -89,15 +96,19 @@ hr{
     /* width: 50%; */
 }
 
-.divMain-profilephoto{
-    /* height: 150px; */
-    display: block;
-    width: 25%; 
-    margin: 0 auto;
+.divProfilephoto{
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
 }
 
-.divMain-personalquote{
-    clear: left;
+.divProfilephoto-profilephoto{
+    height: 250px;
+    width: 50%;
+    object-fit: scale-down;
+}
+
+.divProfilephoto-personalquote{
     text-align: center;
 }
 
@@ -147,18 +158,7 @@ hr{
     background-color: #FC5185;
 }
 
-.h1_name{
-    font-size: 4rem;
-    width: 100%;
-    margin: auto;
-    font-family: 'Sacramento', cursive;
-}
 
-.h3_description{
-    font-size: 1.25rem;
-    width: 90%;
-    margin: auto;
-}
 
 .span_fullstack{
     text-decoration: underline;
