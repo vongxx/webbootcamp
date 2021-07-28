@@ -1,0 +1,32 @@
+h2  {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.img_50percent{
+    width: 25%;
+    margin-right: 2%;
+    float: left;
+}
+
+.divDefault {
+    margin: 0;
+    background-color: red;
+}
+
+.divInlineBlock {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    background-color:green;
+}
+
+.span_text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.divBlackBar{
+    clear: both;
+    background-color: black;
+}

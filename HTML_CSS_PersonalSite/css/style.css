@@ -36,6 +36,9 @@ hr{
 /*Class Selectors - also accept pseudo class eg. img:hover */
 
 
+
+/* .divHeader - START */
+
 .divHeader{
      background-color: white;
      padding-bottom: 50px;
@@ -65,36 +68,9 @@ hr{
     margin: auto;
 }
 
-.divMain{
-    width:80%;
-    margin: 0px auto;
-}
+/* .divHeader - END */
 
-.imgMotherTeresaQuote{
-    width: 30%;
-    float: left;
-    margin: 30px;
-}
-
-.pMotherTeresaQuote{
-    display: inline-block;
-    width: 50%; 
-    font-family: 'Amita', cursive;
-    font-weight: bold;
-    /* margin-top: 8vw; */
-    margin: 8vw auto 0;
-    font-size: 2vw;
-}
-
-.pMotherTeresaName{
-    display: inline-block;
-    font-family: 'Amita', cursive;
-    font-weight: bold;
-    font-size: 1vw;
-    width: 50%;
-    text-align: right;
-    /* width: 50%; */
-}
+/* divProfilephoto  - START*/
 
 .divProfilephoto{
     width: 50%;
@@ -118,6 +94,47 @@ hr{
     text-align: left;
 }
 
+/* divProfilephoto  - END*/
+
+
+.divMotto{
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+.divMotto-h3title{
+    font-size: 1.5rem;
+}
+
+.divMotto-divMotherTeresaQuote{
+    overflow: auto;
+    width : 60%;
+    margin: 30px auto auto auto;
+    /* height: 150px;  */
+}
+
+
+.imgMotherTeresaQuote{
+    height: 150px;
+    object-fit: scale-down;
+    float: left;
+    margin: 0px 5% 0px 0%;
+}
+
+.spanMotherTeresaQuote{
+    margin: 0 auto auto 0;
+    font-family: 'Amita', cursive;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.divMain{
+    width:80%;
+    margin: 0px auto;
+}
 
 .divMain-orderedlist{
     width: fit-content;
