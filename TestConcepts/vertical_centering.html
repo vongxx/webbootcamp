@@ -9,25 +9,56 @@
 
 <body>
     <h1>Vertical centre-ing an image (block object)</h1>
-    <h2>For inline element(span) within a block element(div), use </h2>
-    <img class="img_50percent" src="../HTML_CSS_Bootstrap_PersonalSite/img/farm.png" alt="">
-    <div class="divDefault">
-        <span class="span_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+    <h2>display=inline-block with create margin-right of 4px. Even if you can set it side-by-side, it's not clean to set 2 divs to be same height by only CSS <a href="https://web.archive.org/web/20170726134526/http://www.ejeliot.com/blog/61">Chiem sample</a></h2>
+    <div class="divInlineBlock bggreen">
+        <span class="span_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur esse sunt aperiam dicta temporibus rerum culpa blanditiis a eveniet ipsam dolorum quam, dolor ab, quo perferendis ad beatae aliquam. Sed!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
     </div>
-    <div class="divDefault">
-        <span class="span_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dolor, illo omnis consequuntur quasi perferendis sapiente odit facilis nobis rem aut iure nisi ipsam natus et atque enim! Sapiente, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti a dolorum pariatur veritatis magni et commodi eligendi alias velit tenetur excepturi est obcaecati odio, exercitationem libero inventore aliquid, illo fugit.</span>
-    </div>
-    <div class="divBlackBar"></div>
-    <h2>For inline element(image) within a block element(div), use </h2>
-    <div class="divDefault">
+    <div class="divInlineBlock bgred">
         <span class="span_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
     </div>
     <div class="divBlackBar"></div>
-    <h2>For block element(p) within a block element(div), use </h2>
-    <div class="divDefault">
-        <img src="../HTML_CSS_Bootstrap_PersonalSite/img/farm.png" alt="">
+    <h2>Instead, use Flexbox (display=flex) (for equal height children), and flex=1 in child to may them same width <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox Guide</a> </h2>
+    <div class="divRow">
+        <div class="divCol bggreen">
+            <span class="span_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur esse sunt aperiam dicta temporibus rerum culpa blanditiis a eveniet ipsam dolorum quam, dolor ab, quo perferendis ad beatae aliquam. Sed!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+        <div class="divCol bgred">
+            <span class="span_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+        <div class="divCol bgyellow">
+            <span class="span_text">Lorem ipsum, dolor exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
     </div>
+
     <div class="divBlackBar">
+
+    <h2>Or better, can use CSS grid (even better)<a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Grid Guide</a> or <a href="https://www.w3schools.com/css/css_grid.asp">W3S guide</a> </h2>
+    <div class="divGridContainer bgwhite">
+        <div class="row1-col1 bggreen">
+            <span class="span_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur esse sunt aperiam dicta temporibus rerum culpa blanditiis a eveniet ipsam dolorum quam, dolor ab, quo perferendis ad beatae aliquam. Sed!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+        <div class="row1-col2 bgred">
+            <span class="span_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+        <div class="row1-col3 bgyellow">
+            <span class="span_text">Lorem ipsum, dolor exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+    </div>
+
+    <div class="divBlackBar"></div>
+
+    <h2>Or even better, can use CSS grid with flexbox as item </h2>
+    <div class="divGridContainer bgwhite">
+        <div class="row1-col1 bggreen divFlex">
+            <span class="span_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur esse sunt aperiam dicta temporibus rerum culpa blanditiis a eveniet ipsam dolorum quam, dolor ab, quo perferendis ad beatae aliquam. Sed!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+        <div class="row1-col2 bgred divFlex">
+            <span class="span_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quas quaerat expedita non exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+        <div class="row1-col3 bgyellow divFlex">
+            <span class="span_text">Lorem ipsum, dolor exercitationem veniam. Consequatur quisquam in perspiciatis eos nihil quos laborum omnis, quibusdam tempore temporibus recusandae. Odit, dolorum?</span>
+        </div>
+    </div>
 </body>
 
 </html>
