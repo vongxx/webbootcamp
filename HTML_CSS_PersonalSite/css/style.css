@@ -108,6 +108,26 @@ hr{
     font-size: 1.5rem;
 }
 
+.divRow{
+    display: flex;
+}
+
+.divCol{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.rightAlignFlex{
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.verticalAlignFlex{
+    margin: auto;
+
+}
+
 .divMotto-divMotherTeresaQuote{
     overflow: auto;
     width : 60%;

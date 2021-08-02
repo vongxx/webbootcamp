@@ -32,6 +32,10 @@
 | none | to remove a block completely from view, the css parser will treat it as it don't exist | N.A. |
 
 5. Parent-Child -> z dimension stacking
+6. Basis of responsive CSS
+    - CSS Grid + CSS Flexbox
+    - [Understanding Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 6. position property -> static, absolute, relative (will leave a empty space)
 7. float and clear (float may extends outside parent! -> set overflow property of parent div to be auto)
    - [Understanding float](https://css-tricks.com/almanac/properties/f/float/)
