@@ -44,8 +44,17 @@
 9. Font family -> a fallback model
 7. Font embedding
 8. Favicon 
-9. Default stylesheet implemented by browser
+9. Advanced CSS : Media queries
+```
+    @media (max-width : 1028px)
+    {
+    .title{text-align : center;}
+    .titleImage{position:static;}
+    }
+```
+10. Default stylesheet implemented by browser
     - Chrome => inspect => Body element -> margin: 8px
+    - 
 
 ### Bootstrap 
 1. Frontend Display library (with CSS and Javascript)
