@@ -133,6 +133,28 @@ color : blue; #only the h1 inside a div will be affected
     - [Google Cloud](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gcs#0)
     -  
 
+# Web Design
+1. Color Theory (use https://colorhunt.co)
+    - Red : Love, Energy, Intensity
+    - Green : Freshness, Safety, Growth
+    - Yellow : Intellect, Joy, Attention
+    - Blue : Stability, Trust, Serenity
+    - Purple : Royalty, Wealth, Feminity
+3. Typography
+    - Tips in combining fonts (use 2 of them in a website)
+    - [Infographic on Typography](https://www.designmantic.com/blog/wp-content/uploads/2014/04/font-infography.jpg)
+    - Similar
+      - Mood 
+      - Time (Old or Modern)
+    - Different
+      - Serif-ness
+      - Weight
+
+
+5. UI Design
+6. UX Design
+
+
 # Resources
 
 1. Documention
