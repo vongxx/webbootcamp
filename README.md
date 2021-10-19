@@ -67,6 +67,7 @@
 | container | div | default responsive div - text will snap to container width |
 | container-fluid | div | auto responsive div - better than container |
 | btn | button | have many templates - eg.btn-dark, btn-light, can also add in custom icons to make the btns looks better|
+| carousel | div | the parent div uses "carousel slide", the child slides div uses "carousel-item" |
 
 ### Javascript
 1. To have interactivity
