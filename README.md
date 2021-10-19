@@ -54,7 +54,16 @@
 ```
 10. Default stylesheet implemented by browser
     - Chrome => inspect => Body element -> margin: 8px
-    - 
+11. Combining selectors
+```
+h1, h2, p {
+color : red; #all h1,h2,p will be affected
+}
+
+div h1 {
+color : blue; #only the h1 inside a div will be affected
+}
+```
 
 ### Bootstrap 
 1. Frontend Display library (with CSS and Javascript)
