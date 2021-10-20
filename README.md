@@ -150,8 +150,8 @@ color : blue; #only the h1 inside a div will be affected
       - Serif-ness
       - Weight
 
-
 5. UI Design
+
 6. UX Design
 
 
@@ -169,7 +169,10 @@ color : blue; #only the h1 inside a div will be affected
     - Unicode
         - [UnicodeTable](https://unicode-table.com/)
     - Web design templates (bootstrap specific)
-    - ［Bootsnipp］(https://bootsnipp.com)
+        - [Bootsnipp](https://bootsnipp.com)
+    - Design ideas
+        - [DailyUI](https://www.dailyui.co/)
+        - [Canva.com](https://www.canva.com/websites/templates/?continuation=100)
     - Color Templates
         - [Colorhunt](https://colorhunt.co)
     - Icons
