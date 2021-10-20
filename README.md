@@ -90,6 +90,34 @@ color : blue; #only the h1 inside a div will be affected
 
 ### Javascript
 1. To have interactivity
+2. Chrome → Developer Tools → Sources → Snippets (Test your javascript)
+3. Variables and functions
+```
+function getMyName(para1){
+var myName="XX";
+alert(para1);
+console.log(myName);
+return myName;
+}
+var myName = getMyName("Something");
+```
+4. Conditionals and Operators
+```
+if(a === 100 || b !== 40){}
+else{} 
+if(a > 100 && b <= 40){}
+else{}
+```
+5. Arrays and Objects
+```
+const myArr = [1, 2, "hello"];
+let x = myArr[myArr.length-1];
+for (let i = 0; i < myArr.length; i++) {
+  console.log(myArr[i]);
+}
+const myObj = {name:"XX", age:46};
+let x = myObj.name;
+```
 
 ### Node
 1. Javascript Library
@@ -170,7 +198,7 @@ color : blue; #only the h1 inside a div will be affected
         - [UnicodeTable](https://unicode-table.com/)
     - Web design templates (bootstrap specific)
         - [Bootsnipp](https://bootsnipp.com)
-    - Design ideas
+    - Design Practices
         - [DailyUI](https://www.dailyui.co/)
         - [Canva.com](https://www.canva.com/websites/templates/?continuation=100)
     - Color Templates
