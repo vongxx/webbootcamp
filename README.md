@@ -90,7 +90,36 @@ color : blue; #only the h1 inside a div will be affected
 
 ### Javascript
 1. To have interactivity
-2. Chrome → Developer Tools → Sources → Snippets (Test your javascript)
+2. Add in a separate file "index.js"
+3. In HTML, add in the script tag at the bottom (just b4 the body close tag)
+    - different from css file, we add link tag just after the title tag (b4 the body open tag)
+4. Chrome → Developer Tools → Sources → Snippets (Test your javascript)
+5. Document Object Model
+   - Use HTML Tree Viewer (Chrome extension)
+   - Try testing in console (document.firstElementChild)
+   - All objects have methods and properties
+        - Properties (innerHTML, style, firstElementChild)
+        - Methods (click, appendChild, setAttribute)
+   - Selecting element in DOM using queries(Preferred to use querySelector, querySelectorAll)
+        - document.getElementByTagName("btn"), document.getElementById("title")
+        - document.querySelector(".btn"), document.querySelector("#title")
+        - document.querySelector("li a"), document.querySelectorAll("#mylist .item")
+6. Not recommended to change style using JavaScript
+   - (Recommended)Define class in css, then in javascript, edit the element's property(classList)
+   - Eg. document.querySelector("button").classList.toggle("invisible")
+   - Eg. document.querySelector("button").classList.add("invisible")
+7. Changing Attributes, InnerHTML, textContent
+   - document.querySelector("a").setAttribute("href", "http://google.com");
+8. Adding eventListener
+```
+document.querySelector("button").addEventListener("click", handleClick );
+function handleClick(){
+    alert(this.innerHTML)
+}
+document.addEventListener("keypress", function (event){
+  console.log(event);
+});
+```
 3. Variables and functions
 ```
 function getMyName(para1){
@@ -111,6 +140,7 @@ else{}
 5. Arrays and Objects
 ```
 const myArr = [1, 2, "hello"];
+myArr.push("world");
 let x = myArr[myArr.length-1];
 for (let i = 0; i < myArr.length; i++) {
   console.log(myArr[i]);
