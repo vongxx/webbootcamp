@@ -149,8 +149,18 @@ const myObj = {name:"XX", age:46};
 let x = myObj.name;
 ```
 
-### Node
-1. Javascript Library
+### Node.js
+1. Javascript Library for server-side programming (Similar to python)
+2. Comes bundled with npm to download packages (similar to pip for python)
+3. Libraries to use:
+   - express (very easy to start a web-server/ web-service)
+     - can create a port listener
+     - has functions to respond to GET/POST requests to / or subpages
+   - nodemon (to monitor for file changes and restart webserver)
+   - body-parser (to parse the HTML into a nested class)
+   - request
+   - react
+   - angular.js
 
 ### REACT
 1. Javascript Library
@@ -179,8 +189,11 @@ let x = myObj.name;
     - https://www.toptal.com/github/unlimited-scale-web-hosting-github-pages-cloudflare
     - Got free version! - But 3 page rule
 
-6. If hosting a dynamic website (eg. show different content to diff people), use **Firebase**!
-    - Google's webhosting with Frontend and Backend (Got free version)
+6. If hosting a dynamic website (eg. show different content to diff people), use 
+    - **Heroku**
+        - Free webhosting
+    - **Firebase**
+        - Google's webhosting with Frontend and Backend (Got free version)
 
 7. Firebase (Free) limitations 
     - 100 max concurrent connections
