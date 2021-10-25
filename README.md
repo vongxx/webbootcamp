@@ -191,7 +191,9 @@ let x = myObj.name;
 
 6. If hosting a dynamic website (eg. show different content to diff people), use 
     - **Heroku**
-        - Free webhosting
+        - Free webhosting + able to link to Cloud DB
+            - Link database to ClearDB MySQL (Heroku Addon)
+            - Link db to Mongodb Atlas
     - **Firebase**
         - Google's webhosting with Frontend and Backend (Got free version)
 
