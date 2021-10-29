@@ -149,6 +149,16 @@ const myObj = {name:"XX", age:46};
 let x = myObj.name;
 ```
 
+### jQuery
+1. Javascript librry that simplifies coding $()
+```
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+```
+
 ### Node.js
 1. Javascript Library for server-side programming (Similar to python)
 2. Comes bundled with npm to download packages (similar to pip for python)
@@ -160,13 +170,94 @@ let x = myObj.name;
    - body-parser (to parse the HTML into a nested class)
    - request
    - react
-   - angular.js
 
-### REACT
-1. Javascript Library
+### EJS (Embedded Javascript Templating)
+1. To use with HTML (declaration) + Node.js (to render) so that you can add code to HTML page template's elements to have dyanamic pages using the same template
+
+### React.js
+1. Javascript Library for Front End UI
+2. Combination of HTML,CSS,Javascripts into components and inserting into tree (different from the traditional way of separating content-HTML, styling-CSS, actions-Javascript)
+3  We will only create a div with id=root in HTML, the rest of the content is declared in .js
+4. React.js contains Babel, a javascript compiler, so we can type JSX(javascript extended) which looks something like this: 
+```
+const element = <h1>Hello, world!</h1>;
+```
+5. And on top of embedding html in js, it can embed js in html in js. It is called Javascript expression in JSX (using {})
+```
+const name = 'Josh Perez';
+const element = <h1>Hello, {name}</h1>;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
+6. Depending on the user's browser, Babel will compile your javascript into a compatible javascript for the old browser on the fly
+7. JSX's HTML elements' attributes are declared in cameCase
+```
+<div tabIndex={-1} />      // Just like node.tabIndex DOM API
+<div className="Button" /> // Just like node.className DOM API
+<input readOnly={true} />  // Just like node.readOnly DOM API
+```
+8. You can create javascript functions that return a html element tag. The recommendation for your function name is to use Pascal case (capitalise 1 letter). Then in JSX, can just use the function name a a custom element.
+```
+function Heading(){
+    return <h1>Hello World</h1>;
+}
+ReactDOM.render(
+    <div>
+        <Heading/>
+    </div>
+  ,
+  document.getElementById('root')
+);
+
+```
+9. Can create .jsx files (as modules), and let the main index.js to import them (To split the sections, for easy troubleshooting)
+```
+# Heading.jsx
+import React from "react"
+function Heading(){
+    return <h1>Hello World</h1>;
+}
+function List(){
+    return <ul><li>Hello World</li></ul>;
+}
+function Pi(){
+    return 3.1415;
+}
+export default Heading;
+export {List, Pi};
+
+# index.js
+import Heading, {List, Pi} from "./Heading"
+ReactDOM.render(
+    <div>
+        <Heading/>
+        <List/>
+        <p>{Pi()}</p>
+    </div>
+  ,
+  document.getElementById('root')
+);
+
+
+```
+
+### Combining Bootstrap with React
+1. Since Bootstrap uses jQuery to manipulate the actual DOM and React uses Virtual DOM, they are not exactly compatible. Instead use the module "react-bootstrap", where the bootstrap components are converted into react elements
 
 ### MongoDB
-1. Good backend db to use
+1. Good NoSQL db to use (Can scale up very well)
+2. NoSQL -> you pass in a JSON object with parameters limitation as a query
+3. Use Javascript Object Notation (JSON) as storage - Just nice can use Javascript for FULL-STACK development!!!
+4. Works seemlessly with Node.js (use mongoose library) 
+5. There's free cloud storage of Mongodb using Mongo Atlas
+
+### Passport.js
+1. Library to use with Node.js to provide authentication/hashing
+2. Can also use OAuth to log in with facebook/google etc... (Let google/facebook take care of the credentials management)
+
 
 # Hosting webpage
 1. If static, host using Github (free)
