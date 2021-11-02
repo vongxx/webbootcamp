@@ -1,1 +1,45 @@
 .vscode
+
+# dependencies
+myReactApp/xiaoxiang-app/node_modules
+myReactApp/xiaoxiang-app/.pnp
+myReactApp/xiaoxiang-app/.pnp.js
+
+# testing
+myReactApp/xiaoxiang-app/coverage
+
+# production
+myReactApp/xiaoxiang-app/build
+
+# misc
+myReactApp/xiaoxiang-app/.DS_Store
+myReactApp/xiaoxiang-app/.env.local
+myReactApp/xiaoxiang-app/.env.development.local
+myReactApp/xiaoxiang-app/.env.test.local
+myReactApp/xiaoxiang-app/.env.production.local
+
+myReactApp/xiaoxiang-app/npm-debug.log*
+myReactApp/xiaoxiang-app/yarn-debug.log*
+myReactApp/xiaoxiang-app/yarn-error.log*
+
+# dependencies
+myReactApp/mapping-components-practice/node_modules
+myReactApp/mapping-components-practice/.pnp
+myReactApp/mapping-components-practice/.pnp.js
+
+# testing
+myReactApp/mapping-components-practice/coverage
+
+# production
+myReactApp/mapping-components-practice/build
+
+# misc
+myReactApp/mapping-components-practice/.DS_Store
+myReactApp/mapping-components-practice/.env.local
+myReactApp/mapping-components-practice/.env.development.local
+myReactApp/mapping-components-practice/.env.test.local
+myReactApp/mapping-components-practice/.env.production.local
+
+myReactApp/mapping-components-practice/npm-debug.log*
+myReactApp/mapping-components-practice/yarn-debug.log*
+myReactApp/mapping-components-practice/yarn-error.log*

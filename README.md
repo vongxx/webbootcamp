@@ -241,8 +241,15 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-
 ```
+10. Use Props to pass arguments to react custom elements
+11. Use <javascriptArray>.map() to loop through items and create many react elements on the fly
+11. Use React Development Tools
+    - Can see other sites and even their react codes as well (eg. AirBnb)
+12. Since react is about components and reusing them, there are public react components libraries
+    - [List of React Libraries](https://technostacks.com/blog/react-component-libraries)
+    - [MaterialUI - The best out there - with alot of templates to use](https://mui.com/)
+
 
 ### Combining Bootstrap with React
 1. Since Bootstrap uses jQuery to manipulate the actual DOM and React uses Virtual DOM, they are not exactly compatible. Instead use the module "react-bootstrap", where the bootstrap components are converted into react elements
