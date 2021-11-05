@@ -256,6 +256,45 @@ myArray.map( (x,y) => {
     return x+y;
 });
 ```
+13. Use Ternary operators (?:) or (&& as a means to conditionally render components)
+```javascript
+// Note : JSX can only load javascript expressions, not functions/statements
+// Javascript function (Not allowed)
+if({props.isSaturday}){
+   <h1>10</h1>;
+}
+// Expression (Allowed bcos it will result to a value!)
+{{props.isSaturday} ? <h1>10</h1> : null }
+or
+{{props.isSaturday} && <h1>10</h1>}
+```
+14. Using hooks (React.useState())
+```javascript
+// Hooks are special functions that will trigger re-rendering of parent element if changed 
+// One of the useful hooks is React.useState()
+// React.useState can store int, string, arrays, objects
+// you can define a function inside a function
+import React, {useState} from "react"
+
+function App() {
+    const [count, setCount] = useState(0); // this is called destructuring (giving names to elements in array), then we can define multiple state variables
+    const [fruit, setFruit] = useState("Apple");
+    const [todos, setTodos] = useState([{text: 'Learn Hooks'}]);
+    
+    function increase(){
+        setCount(count + 1);
+    }
+
+    return (
+        <div>
+            <h1>{count}</h1>
+            <button onClick={increase}>+</button>
+        </div>
+    );
+    
+}
+```
+
 13. Use React Development Tools
     - Can see other sites and even their react codes as well (eg. AirBnb)
 14. Since react is about components and reusing them, there are public react components libraries
