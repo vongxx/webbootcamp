@@ -179,11 +179,11 @@ $(document).ready(function(){
 2. Combination of HTML,CSS,Javascripts into components and inserting into tree (different from the traditional way of separating content-HTML, styling-CSS, actions-Javascript)
 3  We will only create a div with id=root in HTML, the rest of the content is declared in .js
 4. React.js contains Babel, a javascript compiler, so we can type JSX(javascript extended) which looks something like this: 
-```
+```javascript
 const element = <h1>Hello, world!</h1>;
 ```
 5. And on top of embedding html in js, it can embed js in html in js. It is called Javascript expression in JSX (using {})
-```
+```javascript
 const name = 'Josh Perez';
 const element = <h1>Hello, {name}</h1>;
 
@@ -194,13 +194,13 @@ ReactDOM.render(
 ```
 6. Depending on the user's browser, Babel will compile your javascript into a compatible javascript for the old browser on the fly
 7. JSX's HTML elements' attributes are declared in cameCase
-```
+```javascript
 <div tabIndex={-1} />      // Just like node.tabIndex DOM API
 <div className="Button" /> // Just like node.className DOM API
 <input readOnly={true} />  // Just like node.readOnly DOM API
 ```
 8. You can create javascript functions that return a html element tag. The recommendation for your function name is to use Pascal case (capitalise 1 letter). Then in JSX, can just use the function name a a custom element.
-```
+```javascript
 function Heading(){
     return <h1>Hello World</h1>;
 }
@@ -214,7 +214,7 @@ ReactDOM.render(
 
 ```
 9. Can create .jsx files (as modules), and let the main index.js to import them (To split the sections, for easy troubleshooting)
-```
+```javascript
 # Heading.jsx
 import React from "react"
 function Heading(){
@@ -244,9 +244,21 @@ ReactDOM.render(
 ```
 10. Use Props to pass arguments to react custom elements
 11. Use <javascriptArray>.map() to loop through items and create many react elements on the fly
-11. Use React Development Tools
+12. Use arrow functions to simplify code
+``` javascript 
+// using anonymous function
+myArray.map( function (x,y) {
+    return x+y;
+}
+);
+// using arrow function
+myArray.map( (x,y) => {
+    return x+y;
+});
+```
+13. Use React Development Tools
     - Can see other sites and even their react codes as well (eg. AirBnb)
-12. Since react is about components and reusing them, there are public react components libraries
+14. Since react is about components and reusing them, there are public react components libraries
     - [List of React Libraries](https://technostacks.com/blog/react-component-libraries)
     - [MaterialUI - The best out there - with alot of templates to use](https://mui.com/)
 
