@@ -123,7 +123,7 @@ document.addEventListener("keypress", function (event){
 3. Variables and functions
 ```
 function getMyName(para1){
-var myName="XX";
+let myName="XX";
 alert(para1);
 console.log(myName);
 return myName;
@@ -150,7 +150,7 @@ let x = myObj.name;
 ```
 
 ### jQuery
-1. Javascript librry that simplifies coding $()
+1. Javascript library that simplifies coding $()
 ```
 $(document).ready(function(){
   $("p").click(function(){
@@ -160,9 +160,10 @@ $(document).ready(function(){
 ```
 
 ### Node.js
-1. Javascript Library for server-side programming (Similar to python)
-2. Comes bundled with npm to download packages (similar to pip for python)
-3. Libraries to use:
+1. Javascript Runtime for server-side programming (Similar to python)
+2. It is a back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+3. Comes bundled with npm to download packages (similar to pip for python)
+4. Libraries to use:
    - express (very easy to start a web-server/ web-service)
      - can create a port listener
      - has functions to respond to GET/POST requests to / or subpages
@@ -300,6 +301,20 @@ function App() {
 14. Since react is about components and reusing them, there are public react components libraries
     - [List of React Libraries](https://technostacks.com/blog/react-component-libraries)
     - [MaterialUI - The best out there - with alot of templates to use](https://mui.com/)
+    - [Interact with elasticsearch using search-ui](https://www.elastic.co/enterprise-search/search-ui)
+
+15. To create static websites in the future, can go for Next.js 
+    - Next.js builds upon React to create server-side rendering/static sites to facilitate SEO and to boost performance!
+
+16. [How to start with react](https://codingthesmartway.com/modern-react-from-the-beginning-ep1-creating-your-first-react-app/)
+
+```shell
+# 1. Create a dir "myfirstapp" + install all required modules
+npx create-react-app myfirstapp
+# 2. Start web server (port 3000) and run the app 
+cd myfirstapp && npm start
+# 3. Edit src/App.js and save to reload
+```
 
 
 ### Combining Bootstrap with React
@@ -414,5 +429,7 @@ function App() {
     - [Good intro article](https://kinsta.com/knowledgebase/what-is-wordpress/)
 
 
+# TODO
+1. [Site to work on React knowledge](https://codingthesmartway.com/modern-react-from-the-beginning-ep5-arrow-functions-and-object-destructuring/)
 
-
+2. [Site to work on React + Material UI](https://medium.com/codingthesmartway-com-blog/getting-started-with-material-ui-for-react-material-design-for-react-364b2688b555)
