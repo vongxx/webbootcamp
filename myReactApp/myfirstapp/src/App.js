@@ -65,6 +65,8 @@ const App = () => {
   // I can define a function inside a function!! Wow!
   function getName(){return myName;}
 
+  //useState ctor accepts initial state and return array with 2 values
+  // the state_var and the function that updates the state_var
   const [searchText, setSearchText] = useState(localStorage.getItem('searchText') || '');
 
   // Define another function inside a function!! Wow!
@@ -74,7 +76,7 @@ const App = () => {
     // store into browser's local storage => even after page is reloaded, the value remains
   }
 
-  // This useEffect will update the browser's local storage everytime the variable "searchText" is changed
+  // useEffect will update the browser's local storage everytime the variable "searchText" is changed
   // useEffect takes in 2 param : function, array of dependencies which will trigger function
   // if array of dependencies not given, the function will trigger every render
   // if array of dependencies is empty array, the function will trigger once
