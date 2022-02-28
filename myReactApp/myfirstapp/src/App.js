@@ -4,6 +4,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ExternalCourseList from './CourseList';
+import {useState} from 'react';
 
 const myName = 'XX'
 
@@ -56,15 +57,31 @@ function CourseList(){
   });
 }
 
-
-function App() {
+// As compared to function App(){...} , we use arrow functions
+const App = () => {
   // Defining a variable inside a function
   const greetings = {one:'Hello', two: "World"}
   // I can define a function inside a function!! Wow!
   function getName(){return myName;}
 
+  const [searchText, setSearchText] = useState('');
 
-  
+  // Define another function inside a function!! Wow!
+  const handleSearchInputChange = event => {
+    // console.log(event.target.value);
+    setSearchText(event.target.value);
+  }
+
+  const filteredCourses = myCourses.filter(course => {
+    return course.title.includes(searchText) || course.author.includes(searchText);
+  });
+
+  const handleSearchInputKeyPress = event => {
+    if (event.key === 'Enter'){
+      console.log('Enter Key pressed! Search Value: ' + event.target.value);
+    }
+  }
+
   return (
     <div>
       <h1>My First React App.</h1>
@@ -76,11 +93,15 @@ function App() {
         })
       }
       <hr/>
-      <h1>Using Function From Same File</h1>
-      <CourseList />
+      <label htmlFor="searchInput">Search: </label>
+      <input id="searchInput" type="text" onChange={handleSearchInputChange} onKeyPress={handleSearchInputKeyPress}/>
+      {/* <h1>Using Function From Same File</h1> */}
+      {/* <CourseList /> */}
       <hr/>
       <h1>Using Function From External File</h1>
       <ExternalCourseList courses={myCourses}/>
+      <h1>Using Function From External File with filtering base on search</h1>
+      <ExternalCourseList courses={filteredCourses}/>
     </div>
   );
 }

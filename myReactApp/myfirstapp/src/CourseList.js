@@ -1,7 +1,12 @@
 // Note the argument "props"
 
-function ExternalCourseList(props){
-    return props.courses.map(function(course){
+// function ExternalCourseList(props){
+const ExternalCourseList = (props) => {
+    return props.courses.map(
+      // Again, we replace function definition with arrow function
+      // function(course)
+      course =>
+      {
       return <div key={course.id}>
                <span>
                  <a href={course.url}><h4>{course.title}</h4></a>
@@ -12,7 +17,7 @@ function ExternalCourseList(props){
                <span> | Rating: {course.rating}</span>
                <br/><br/>
             </div>
-    });
+      });
   }
 
 export default ExternalCourseList;
