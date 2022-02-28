@@ -5,7 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import ExternalCourseList from './CourseList';
 import Search from './Search';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 const myName = 'XX'
 
@@ -72,8 +72,16 @@ const App = () => {
     // console.log(event.target.value);
     setSearchText(event.target.value);
     // store into browser's local storage => even after page is reloaded, the value remains
-    localStorage.setItem('searchText', event.target.value)
   }
+
+  // This useEffect will update the browser's local storage everytime the variable "searchText" is changed
+  // useEffect takes in 2 param : function, array of dependencies which will trigger function
+  // if array of dependencies not given, the function will trigger every render
+  // if array of dependencies is empty array, the function will trigger once
+  // if array of dependencies is [somevar], the function will trigger once then every time the somevar changes.
+  useEffect(()=>{
+    localStorage.setItem('searchText', searchText)
+  },[searchText]);
 
   const filteredCourses = myCourses.filter(course => {
     return course.title.includes(searchText) || course.author.includes(searchText);
@@ -97,7 +105,7 @@ const App = () => {
       }
       <hr/>
       <Search value={searchText} onSearch={handleSearchInputChange}/>
-      
+
       {/* <label htmlFor="searchInput">Search: </label> */}
       {/* <input id="searchInput" type="text" onChange={handleSearchInputChange} onKeyPress={handleSearchInputKeyPress}/> */}
       {/* <h1>Using Function From Same File</h1> */}
