@@ -434,11 +434,13 @@ cd myfirstapp && npm start
 
 2. [Site to work on React + Material UI](https://medium.com/codingthesmartway-com-blog/getting-started-with-material-ui-for-react-material-design-for-react-364b2688b555)
 
-3. [Site to work on React + ElasticSearch](https://medium.appbase.io/how-to-build-a-movie-search-app-with-react-and-elasticsearch-2470f202291c)
+3. [Site to work on React + Material UI](https://www.methodiq.com/insights/getting-started-with-material-ui)
 
-4. [Site to work on React + ElasticSearch + Kibana](https://medium.com/@felipe.meriga/the-recipe-of-success-elasticsearch-kibana-react-de8935396fa2)
+4. [Site to work on React + ElasticSearch](https://medium.appbase.io/how-to-build-a-movie-search-app-with-react-and-elasticsearch-2470f202291c)
 
-5. React with Charts & Maps
+5. [Site to work on React + ElasticSearch + Kibana](https://medium.com/@felipe.meriga/the-recipe-of-success-elasticsearch-kibana-react-de8935396fa2)
+
+6. React with Charts & Maps
   - [Apex Charts](https://apexcharts.com/)
   - [Recharts](https://recharts.org/en-US)
   - [react-simple-maps](https://www.react-simple-maps.io/) 
