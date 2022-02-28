@@ -4,6 +4,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ExternalCourseList from './CourseList';
+import Search from './Search';
 import {useState} from 'react';
 
 const myName = 'XX'
@@ -64,12 +65,14 @@ const App = () => {
   // I can define a function inside a function!! Wow!
   function getName(){return myName;}
 
-  const [searchText, setSearchText] = useState('');
+  const [searchText, setSearchText] = useState(localStorage.getItem('searchText') || '');
 
   // Define another function inside a function!! Wow!
   const handleSearchInputChange = event => {
     // console.log(event.target.value);
     setSearchText(event.target.value);
+    // store into browser's local storage => even after page is reloaded, the value remains
+    localStorage.setItem('searchText', event.target.value)
   }
 
   const filteredCourses = myCourses.filter(course => {
@@ -93,8 +96,10 @@ const App = () => {
         })
       }
       <hr/>
-      <label htmlFor="searchInput">Search: </label>
-      <input id="searchInput" type="text" onChange={handleSearchInputChange} onKeyPress={handleSearchInputKeyPress}/>
+      <Search value={searchText} onSearch={handleSearchInputChange}/>
+      
+      {/* <label htmlFor="searchInput">Search: </label> */}
+      {/* <input id="searchInput" type="text" onChange={handleSearchInputChange} onKeyPress={handleSearchInputKeyPress}/> */}
       {/* <h1>Using Function From Same File</h1> */}
       {/* <CourseList /> */}
       <hr/>
