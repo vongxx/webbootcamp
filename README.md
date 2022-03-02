@@ -443,4 +443,16 @@ cd myfirstapp && npm start
 6. React with Charts & Maps
   - [Apex Charts](https://apexcharts.com/)
   - [Recharts](https://recharts.org/en-US)
-  - [react-simple-maps](https://www.react-simple-maps.io/) 
+  - [JvectorMap](https://jvectormap.com/examples/marker-icons/)
+  - [react-simple-maps](https://www.react-simple-maps.io/)
+
+7. Templates to kick start project 
+  - [Material UI Store](https://mui.com/store/)
+  - [ThemeForest](https://themeforest.net/tags/material%20design,material%20ui,react?compatible_with=ReactJS&term=material%20app#content)
+  - [CreativeTim](https://www.creative-tim.com/templates/material-ui)
+
+8. Templates to buy
+  - [Material App Pro - $69](https://mui.com/store/items/material-app/)
+  - [Fuse- React Admin Template - $29](https://themeforest.net/item/fuse-react-react-redux-material-design-admin-template/21769397)
+  - [Material Dashboard 2 PRO React - $69](https://www.creative-tim.com/product/material-dashboard-pro-react)
+  
