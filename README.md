@@ -176,6 +176,10 @@ const express = require('express');
 const app = express()
 const PORT = 8000
 // Provide an API
+app.get("/", (req,res) => {
+  // Response containing a JSON {} object with a single key "hi" with value "there"
+  res.send({hi: "there"});
+});
 app.get("/api/hello", (req,res) => {
   res.json({message: "Hello from my Node.js server!"});
 });
