@@ -173,10 +173,10 @@ $(document).ready(function(){
 // import express library
 const express = require('express');
 // create an object from the library
-const app = express()
+const app = express();
 // if an environment variable (port) is defined, use it, else use 8000
 // some website host (eg. heroku) uses dynamic port binding => assign a random port and will set it to the env var! 
-const PORT = process.env.port || 8000
+const PORT = process.env.port || 8000;
 // Declare route handlers
 app.get("/", (req,res) => {
   // Response containing a JSON {} object with a single key "hi" with value "there"
@@ -206,7 +206,21 @@ const express = require('express');
 // In React  , we use ES6 (ES2015) syntax to import javascript libraries
 import express from 'express'; 
 ```
-7. XXX
+7. Explicitly stating (in package.json) which version of Node and npm to use
+   - Important for deploying in Heroku as it will by default assigns an older version of node and npm to start your project
+```   
+"engines" : {
+  "node" : "8.1.1",
+  "npm" : "5.0.3"
+},
+```
+8. Explicitly define our start script (in package.json)
+```   
+"scripts" : {
+  "start" : "node index.js"  
+},
+```
+10. XXX
 
 ### EJS (Embedded Javascript Templating)
 1. To use with HTML (declaration) + Node.js (to render) so that you can add code to HTML page template's elements to have dyanamic pages using the same template
