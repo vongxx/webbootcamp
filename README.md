@@ -171,6 +171,14 @@ $(document).ready(function(){
    - body-parser (to parse the HTML into a nested class)
    - request
    - react
+5. Some coding difference
+```javascript
+// In Node.js, we use CommonJS     syntax to import javascript libraries (Bcos Node.js does not have support for ES6 modules)
+const express = require('express');
+// In React  , we use ES6 (ES2015) syntax to import javascript libraries
+import express from 'express'; 
+```
+6. XXX
 
 ### EJS (Embedded Javascript Templating)
 1. To use with HTML (declaration) + Node.js (to render) so that you can add code to HTML page template's elements to have dyanamic pages using the same template
