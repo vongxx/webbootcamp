@@ -168,6 +168,10 @@ $(document).ready(function(){
    - cd server && npm init -y (This will create a package.json -> all the main config for this project)
    - npm install express (This will create node_modules dir with all express' dependency + add a record inside package.json)
    - create the entry point file (index.js)
+   - edit the package.json
+     - Define start script
+     - Define node and npm engines requirement
+   - Create a .gitignore to ignore the dependencies dir (node_modules)    
    - Start writing some javascript
 ```javascript
 // import express library
