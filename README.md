@@ -175,7 +175,7 @@ const express = require('express');
 // create an object from the library
 const app = express()
 const PORT = 8000
-// Provide an API
+// Declare route handlers
 app.get("/", (req,res) => {
   // Response containing a JSON {} object with a single key "hi" with value "there"
   res.send({hi: "there"});
