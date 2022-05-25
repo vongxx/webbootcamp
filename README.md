@@ -374,6 +374,9 @@ cd myfirstapp && npm start
     - [GoogleDomain](https://domains.google/intl/en_sg) ($12/year)
 
 3. Change the domain name of your github pages!
+    - Basically, there're 2 steps 
+        - Configure your domain provider(eg. Namecheap)'s purchased domain's DNS (myfarm.com) to the IP address(185.199.108.153) of github.io
+        - Configure the settings in your github project (Custom domain = myfarm.com)
     - https://www.youtube.com/watch?v=TwOV_UaIXcU
     - Old webpage url = https://vongxx.github.io/webbootcamp/HTML_PersonalSite/
     - New webpage url = https://myfarm.com/HTML_PersonalSite/
