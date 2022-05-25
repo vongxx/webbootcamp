@@ -163,7 +163,29 @@ $(document).ready(function(){
 1. Javascript Runtime for server-side programming (Similar to python)
 2. It is a back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
 3. Comes bundled with npm to download packages (similar to pip for python)
-4. Libraries to use:
+4. When starting a project,
+   - mkdir server
+   - cd server && npm init -y (This will create a package.json -> all the main config for this project)
+   - npm install express (This will create node_modules dir with all express' dependency + add a record inside package.json)
+   - create the entry point file (index.js)
+   - Start writing some javascript
+```javascript
+// import express library
+const express = require('express');
+// create an object from the library
+const app = express()
+const PORT = 8000
+// Provide an API
+app.get("/api/hello", (req,res) => {
+  res.json({message: "Hello from my Node.js server!"});
+});
+// Start listening to port
+app.listen(PORT, ()=> {
+  console.log(`Server is listening on ${PORT}`);
+});
+
+```   
+5. Libraries to use:
    - express (very easy to start a web-server/ web-service)
      - can create a port listener
      - has functions to respond to GET/POST requests to / or subpages
@@ -171,14 +193,14 @@ $(document).ready(function(){
    - body-parser (to parse the HTML into a nested class)
    - request
    - react
-5. Some coding difference
+6. Some coding difference
 ```javascript
 // In Node.js, we use CommonJS     syntax to import javascript libraries (Bcos Node.js does not have support for ES6 modules)
 const express = require('express');
 // In React  , we use ES6 (ES2015) syntax to import javascript libraries
 import express from 'express'; 
 ```
-6. XXX
+7. XXX
 
 ### EJS (Embedded Javascript Templating)
 1. To use with HTML (declaration) + Node.js (to render) so that you can add code to HTML page template's elements to have dyanamic pages using the same template
