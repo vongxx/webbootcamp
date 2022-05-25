@@ -174,7 +174,9 @@ $(document).ready(function(){
 const express = require('express');
 // create an object from the library
 const app = express()
-const PORT = 8000
+// if an environment variable (port) is defined, use it, else use 8000
+// some website host (eg. heroku) uses dynamic port binding => assign a random port and will set it to the env var! 
+const PORT = process.env.port || 8000
 // Declare route handlers
 app.get("/", (req,res) => {
   // Response containing a JSON {} object with a single key "hi" with value "there"
