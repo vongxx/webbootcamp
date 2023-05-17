@@ -480,6 +480,7 @@ cd myfirstapp && npm start
     - Fonts
         - [Google Fonts](https://fonts.google.com)
             - can embed these fonts into your page (google even provide you with an embed link)
+            - [Google Webfont helper - to help you in embedding fonts](https://gwfh.mranftl.com/fonts)
 
 
 3. Is self built website still relevant with 41.4% of the top 10 million websites (as of May 2021) using Wordpress.org?
